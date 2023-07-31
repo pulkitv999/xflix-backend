@@ -4,7 +4,7 @@
 
 NODE_PORT=8082
 PROJECT_DIR="$PWD"
-NODE_DIR="$PROJECT_DIR/src"
+NODE_DIR="$PROJECT_DIR/backend"
 
 # exit on non-zero return code
 set -e

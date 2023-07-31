@@ -2,7 +2,7 @@
     "apps": [
       {
         "name": "xflix_backend",      
-        "script": "src/index.js",    
+        "script": "backend/index.js",    
         "watch": true,               
         "ignore_watch": ["node_modules", "logs"],  
         "env": {
