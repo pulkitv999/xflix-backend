@@ -4,7 +4,7 @@
 
 NODE_PORT=8082
 PROJECT_DIR="$PWD"
-NODE_DIR="$PROJECT_DIR/backend"
+NODE_DIR="$PROJECT_DIR/src"
 
 # exit on non-zero return code
 set -e
@@ -27,7 +27,7 @@ then
   echo "Killed application running on $NODE_PORT"
 fi
 
-cd $PROJECT_DIR/backend && npm install && pm2 start npm -- start
+cd $PROJECT_DIR/src && npm install && pm2 start npm -- start
 
 while ! netstat -tna | grep 'LISTEN\>' | grep -q $NODE_PORT; do
   echo "waiting for Node application to start on port $NODE_PORT"
