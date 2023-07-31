@@ -25,7 +25,7 @@ const getPossibleContentRatings = (contentRating) => {
 
   const contentRatingIndex = contentRatings.indexOf(contentRating);
 
-  const possibleContentRatings = contentRatings.slice(0, contentRatingIndex);
+  const possibleContentRatings = contentRatings.slice(contentRatingIndex);
   return possibleContentRatings;
 };
 
